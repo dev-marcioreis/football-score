@@ -14,7 +14,7 @@
 }
 
 /*==========Root==========*/
-$blue-color: hsl(261, 100%, 50%);
+$blue-color: hsl(190, 93%, 65%);
 $blue2-color: hsl(227, 26%, 13%);
 $black-color: hsl(0, 0%, 0%);
 $white-color: hsl(0, 0%, 100%);
@@ -27,3 +27,12 @@ $text-color: hsl(0, 1%, 77%);
 $glass-color: hsla(0, 0%, 100%, 0.075);
 $transition: all 400ms ease;
 $shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+
+$gradient-color: linear-gradient(45deg, hsl(44, 88%, 51%), hsl(29, 79%, 55%));
+$gradient2-color: linear-gradient(45deg, hsl(298, 95%, 69%), hsl(295, 93%, 47%));
+$box-bg: hsl(1, 72%, 14%);
+$card-bg: hsl(56, 100%, 75%);
+$light-pink: hsl(329, 81%, 80%);
+$dark-pink: hsl(335, 71%, 56%);
+
+
