@@ -5,6 +5,7 @@
     right: 0;
     align-items: center;
     justify-content: center;
+    transition: $transition;
 
     .header-tab {
         position: relative;
@@ -19,13 +20,12 @@
             top: -2rem;
             align-items: center;
             justify-content: center;
-            width: 4rem;
-            height: 4rem;
-            left: 48%;
+            width: 3.5rem;
+            height: 3.5rem;
+            left: 47%;
             transform: translateX(-50%);
             background: $blue2-color;
             border-radius: 5rem;
-            border: 5px solid $blue2-color;
             cursor: pointer;
             transition: $transition;
             z-index: 1;
@@ -34,7 +34,7 @@
 
                 i {
                     color: $white-color;
-                    font-size: 1.8rem;
+                    font-size: 1.7rem;
                 }
             }
 
@@ -43,26 +43,19 @@
             }
         }
 
-
-        .circle, .circle1, .circle2 {
-            position: absolute;
-            left: 48%;
-            transform: translateX(-50%);
-            width: 14rem;
-            height: 5rem;
-            border-bottom-left-radius: 5rem;
-            border-bottom-right-radius: 5rem;
-            transform-origin: top center;
-            transition: .7s ease-in-out;
-        }
-
         .circle {
             position: absolute;
+            left: 45%;
+            transform: translateX(-50%);
+            width: 25rem;
+            height: 5rem;
+            transform-origin: top center;
+            transition: .7s ease-in-out;
 
             .circle-icon {
                 position: absolute;
-                bottom: .5rem;
-                left: 48%;
+                bottom: -.2rem;
+                left: 47%;
                 transform: translateX(-50%);
                 display: flex;
                 align-items: center;
@@ -71,11 +64,15 @@
 
                 li {
                     transform: rotate(180deg);
+                    padding: .4rem;
+                    border-radius: 5rem;
+                    box-shadow: $shadow;
+                    background: hsl(29, 79%, 55%);
                     
                     a {
                       
                         i {
-                            font-size: 2rem;
+                            font-size: 1.2rem;
                             color: $white-color;
                         }
                     }
@@ -105,7 +102,7 @@
 
                         i {
                             pointer-events: none;
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
                             padding: .4rem;
                             background: $blue2-color;
                             border-radius: 5rem;
@@ -138,4 +135,31 @@
     .active .circle, .circle1, .circle2 {
         transform: translateX(-50%) rotate(180deg);
     }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .header {
+    
+        .header-tab {
+            width: 24rem;
+    
+            .menu-toggle {
+                left: 46%;
+    
+                span {
+    
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+    
+            .circle {
+                left: 43%;
+            }
+        }
+    }
+
 }
