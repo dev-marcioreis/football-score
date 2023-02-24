@@ -32,6 +32,18 @@
                     font-weight: 700;
                 }
 
+                .time {
+                    align-items: center;
+                    justify-content: center;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    box-shadow: $shadow;
+                    background: $blue2-color;
+                    border-radius: 5rem;
+                    color: $white-color;
+                    font-weight: 700;
+                }
+
                 .team {
                    width: 12rem;
 
@@ -40,6 +52,7 @@
                         height: 3.5rem;
                         border-radius: .5rem;
                         padding: .3rem;
+                        background: $blue2-color;
                         box-shadow: $shadow;
                    }
 
@@ -50,15 +63,20 @@
                 }
 
                 .goals {
-                    font-size: 2rem;
+                    box-shadow: $shadow;
+                    padding: .5rem;
+                    background: $blue2-color;
+                    border-radius: .5rem;
+                    font-size: 1.5rem;
                     font-weight: 700;
                 }
             }
 
             .matches {
                 flex-direction: column;
+                height: 4rem;
                 margin-block-start: 3.5rem;
-                border-top: 2px solid $blue2-color
+                border-top: 2px solid $blue2-color;
             }
 
 
@@ -96,3 +114,5 @@
         }
     }
 }
+
+
