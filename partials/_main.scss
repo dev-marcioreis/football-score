@@ -116,3 +116,47 @@
 }
 
 
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .main {
+
+        .container {
+    
+            .container__box {
+                width: 95%;
+                padding: .5rem;
+    
+                .box-title {
+    
+                    .team {
+                       width: 8rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .main {
+
+        .container {
+    
+            .container__box {
+                width: 92%;
+                padding: .2rem;
+    
+                .box-title {
+    
+                    .team {
+                       width: 6rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
