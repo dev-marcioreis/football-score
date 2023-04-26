@@ -6,7 +6,7 @@ Menu para teste.
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 SASS
 
 ## ✒️ Autor
